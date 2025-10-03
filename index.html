@@ -3,75 +3,79 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <title>Fatosin Adeola - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header role="banner">
+  
+  <header>
+    <h1>Fatosin Adeola</h1>
+    <p>Frontend Developer | Portfolio Creator</p>
+    <img src="images/deor_pic.jpg" 
+         alt="Portrait of Fatosin Adeola"
+         style="width:25%;">
+  </header>
 
-<!-- Navigation -->
-  <nav role="navigation" aria-label="Main Navigation">
-    <a href="#about" aria-label="Go to About section">About</a>
-    <a href="#projects" aria-label="Go to Projects section">Projects</a>
-    <a href="#contact" aria-label="Go to Contact section">Contact</a>
+
+  <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </nav>
 
-  <h1 id="site-title">Fatosin Adeola</h1>
-  <p>Front-End Developer | Problem Solver | Creator</p>
-  <img src="images/deor_pic.jpg" 
-       alt="Portrait of Fatosin Adeola" 
-       width="25%">
-
-</header>
-  <!-- Main content -->
-  <main role="main">
-    
-    <!-- About Section -->
-    <section id="about" role="region" aria-labelledby="about-heading">
+  
+  <main>
+  
+    <section id="about" aria-labelledby="about-heading">
       <h2 id="about-heading">About Me</h2>
-      <p>I’m a developer passionate about building web applications...</p>
+      <p>
+        I am a passionate front-end developer with a focus on creating 
+        clean, accessible, and user-friendly web applications.
+      </p>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" role="region" aria-labelledby="projects-heading">
-      <h2 id="projects-heading">My Projects</h2>
+  
+    <section id="projects" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Projects</h2>
 
-      <article role="article" aria-labelledby="blog-app-title">
+      <article aria-labelledby="blog-app-title">
         <h3 id="blog-app-title">Blog App</h3>
-        <p>A full-stack blog platform with authentication.</p>
+        <p>A simple blog application built with HTML, CSS, and JavaScript.</p>
       </article>
 
-      <article role="article" aria-labelledby="ecommerce-title">
-        <h3 id="ecommerce-title">E-Commerce Store</h3>
-        <p>A shopping site with cart and checkout system.</p>
+      <article aria-labelledby="ecommerce-title">
+        <h3 id="ecommerce-title">E-commerce Website</h3>
+        <p>An online shopping platform built with responsive design principles.</p>
       </article>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" role="form" aria-labelledby="contact-heading">
+    <section id="contact" aria-labelledby="contact-heading">
       <h2 id="contact-heading">Contact Me</h2>
-      <form aria-describedby="contact-instructions">
-        <p id="contact-instructions">Fill the form below to send me a message:</p>
-
+      <form action="#" method="post">
         <label for="name">Name:</label>
-        <input type="text" id="name" required aria-required="true">
+        <input type="text" id="name" name="name" required>
 
         <label for="email">Email:</label>
-        <input type="email" id="email" required aria-required="true">
+        <input type="email" id="email" name="email" required>
 
         <label for="message">Message:</label>
-        <textarea id="message" aria-multiline="true"></textarea>
+        <textarea id="message" name="message" rows="4" required></textarea>
 
-        <button type="submit" aria-label="Send message">Send</button>
+        <button type="submit">Send</button>
       </form>
     </section>
-
   </main>
 
-  <!-- Footer -->
-  <footer role="contentinfo">
-    <p>&copy; 2025 Adeola Esq. All rights reserved.</p>
-     <a href="https://github.com/Adeolatemi" target="_blank" rel="noopener">GitHub</a>
-     </footer>
+
+  <footer>
+    <p>&copy; 2025 Fatosin Adeola. All rights reserved.</p>
+    <p>
+    <a href="https://github.com/Adeolatemi" target="_blank" rel="noopener">
+      Visit my GitHub
+    </a>
+  </p>
+  </footer>
 </body>
 </html>
- 
