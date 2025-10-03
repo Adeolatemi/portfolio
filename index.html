@@ -5,53 +5,72 @@
   <title>My Portfolio</title>
 </head>
 <body>
-  <header>
-    <h1>Fatosin Adeola</h1>
-    <p>Front - End Developer | Problem Solver | Creator</p>
-    <img src="">
-  </header>
+  <header role="banner">
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
+<!-- Navigation -->
+  <nav role="navigation" aria-label="Main Navigation">
+    <a href="#about" aria-label="Go to About section">About</a>
+    <a href="#projects" aria-label="Go to Projects section">Projects</a>
+    <a href="#contact" aria-label="Go to Contact section">Contact</a>
   </nav>
 
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>I’m a developer passionate about building web applications...</p>
+  <h1 id="site-title">Fatosin Adeola</h1>
+  <p>Front-End Developer | Problem Solver | Creator</p>
+  <img src="images/deor_pic.jpg" 
+       alt="Portrait of Fatosin Adeola" 
+       width="25%">
+
+</header>
+  <!-- Main content -->
+  <main role="main">
     
+    <!-- About Section -->
+    <section id="about" role="region" aria-labelledby="about-heading">
+      <h2 id="about-heading">About Me</h2>
+      <p>I’m a developer passionate about building web applications...</p>
     </section>
 
-    <section id="projects">
-      <h2>My Projects</h2>
-      <article>
-        <h3>Blog App</h3>
+    <!-- Projects Section -->
+    <section id="projects" role="region" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">My Projects</h2>
+
+      <article role="article" aria-labelledby="blog-app-title">
+        <h3 id="blog-app-title">Blog App</h3>
         <p>A full-stack blog platform with authentication.</p>
       </article>
-      <article>
-        <h3>E-Commerce Store</h3>
+
+      <article role="article" aria-labelledby="ecommerce-title">
+        <h3 id="ecommerce-title">E-Commerce Store</h3>
         <p>A shopping site with cart and checkout system.</p>
       </article>
     </section>
 
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <form>
+    <!-- Contact Section -->
+    <section id="contact" role="form" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact Me</h2>
+      <form aria-describedby="contact-instructions">
+        <p id="contact-instructions">Fill the form below to send me a message:</p>
+
         <label for="name">Name:</label>
-        <input type="text" id="name" required>
+        <input type="text" id="name" required aria-required="true">
+
         <label for="email">Email:</label>
-        <input type="email" id="email" required>
+        <input type="email" id="email" required aria-required="true">
+
         <label for="message">Message:</label>
-        <textarea id="message"></textarea>
-        <button type="submit">Send</button>
+        <textarea id="message" aria-multiline="true"></textarea>
+
+        <button type="submit" aria-label="Send message">Send</button>
       </form>
     </section>
+
   </main>
 
-  <footer>
+  <!-- Footer -->
+  <footer role="contentinfo">
     <p>&copy; 2025 Adeola Esq. All rights reserved.</p>
-  </footer>
+     <a href="https://github.com/Adeolatemi" target="_blank" rel="noopener">GitHub</a>
+     </footer>
 </body>
 </html>
+ 
